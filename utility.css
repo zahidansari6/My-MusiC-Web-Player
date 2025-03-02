@@ -1,0 +1,92 @@
+.border {
+    border: 2px solid red;
+    /* margin: 3px; */
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.item-center {
+    align-items: center;
+}
+.bg-black{
+    /* background-color: black; */
+    background-color: #081421;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-gray{
+    /* background-color: #121212; */
+    background-color: #0a183d;
+}
+.rounded{
+    border-radius: 7px;
+}
+.m-1{
+    margin: .7rem;
+}
+.p-1{
+    padding: 1.7rem;
+    padding-right: 1rem;
+}
+
+/* Apply these styles to the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: #1c4877;
+  } */
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ffa4b6; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Rounded corners of the handle */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:#081421; /* Color of the scrollbar track */
+  }
+  
+  /* Handle on active */
+  ::-webkit-scrollbar-thumb:active {
+    background: #ffa4b6;
+  }
+
+
+
+input[type="range"] {
+    height: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 1.5px;
+    outline: none;
+    background: linear-gradient(to right,  #ffa4b6 0%,  #ffa4b6 50%, #fff 50%, #fff 100%);
+    transform: translate(0%, -135%);
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 13px;
+height: 13px;
+background:  #eb738b;
+border-radius: 50%;
+cursor: pointer;
+/* transform: translate(100%,0); */
+}
+
+
+
+

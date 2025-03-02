@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My MusiC – Web Player</title>
+    <script src="https://kit.fontawesome.com/06c0dd6514.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+
+            <div class="home bg-gray rounded m-1 p-1">
+                <div class="close">
+                    <img src="img/close.svg" alt="">
+                </div>
+                <div class="logo"><img width="37" src="img/logo1.svg" class="invert" alt="logo"> <span class="titletotal" ><span class="titlefront">MY</span>MUSIC</span></div> 
+                <ul>
+                    <li class="home-icon"><img class="invert" src="img/home.svg" alt="home"><span>Home</span></li>
+                    <li class="search-icon"><img class=" invert" src="img/search.svg" alt="search"><span>Search</span></li>
+                </ul>
+            </div>
+            <div class="library bg-gray rounded m-1">
+                <div class="heading">
+                    <img src="img/playlist.svg" class="invert" alt="playlist">
+                    <h2>
+                        Your Library
+                    </h2>
+
+                </div>
+                <div class="songList">
+                    <ul> 
+                        <!-- <li>
+
+                            <img class="invert" src="music.svg" alt="">
+                            <div class="info">
+                                <div class="song">Song name</div>
+                                <div>Song Artist</div>
+                            </div>
+                            <div class="playnow">
+                                <span>Play Now</span>
+                                <img src="play.svg" alt="">
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/" id="" class="" data-encore-id="textLink"><span
+                                class="">Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/privacy/" id="" class="" data-encore-id="textLink"><span
+                                class="">Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/" id="" class=""
+                            data-encore-id="textLink"><span class="">Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/" id="" class=""
+                            data-encore-id="textLink"><span class="">Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id="" class=""
+                            data-encore-id="textLink"><span class="">About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/" id="" class=""
+                            data-encore-id="textLink"><span class="">Accessibility</span></a></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="right bg-gray rounded ">
+            <div class="header">
+                <div class="nav">
+
+                    <img class="hamberger" src="img/hamburger.svg" alt="">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="12" fill="#000" />
+                        <path d="M15 6L9 12L15 18" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="16" />
+                        </g>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="12" fill="#000" />
+                        <path d="M9.00005 6L15 12L9 18" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="16" />
+                    </svg>
+                    <div class="search-form">
+                        <input type="search" name="search" id="search-box" autocomplete="off"
+                            placeholder="search here...." />
+                        <label for="search-box" class="fas fa-search"></label>
+                    </div>
+
+
+                </div>
+                <div class="button">
+                    <!-- Sign Up button -->
+                    <a href="signIn.html" id="signup-link">
+                        <button class="signupbtn">Sign up</button>
+                    </a>
+                    
+                    <!-- Log In button -->
+                    <a href="signIn.html" id="login-link">
+                        <button class="loginbtn">Log in</button>
+                    </a>
+                    
+                    <!-- Log Out button (initially hidden) -->
+                    <a> <button id="logout-btn" class="logoutbtn" style="display: none;">Log out</button></a>
+                </div>
+            </div>
+            <div class="spotifyPlaylists p-1">
+                <h1><span class="titlefront">MY</span>musiC</span> Playlist</h1>
+                
+                <div class="cardContainer">
+                    <!-- <div data-folder="Bengali" class="card rounded">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"
+                                fill="none">
+                                <circle cx="50" cy="50" r="25" fill="#1fdf64" />
+                                <g transform="translate(39, 38)">
+                                    <path d="M5 20V4L19 12L5 20Z" fill="#000" />
+                                </g>
+                            </svg>
+                        </div>
+                        <img class="rounded" src="img/img1.jpg" alt="">
+                        <h2>Today’s Top Hits</h2>
+                        <p>Teddy Swims is on top of the Hottest 50!</p>
+                    </div> -->
+
+
+
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    
+                    <div class="abovebar">
+                        <div class="songinfo">
+                            <!-- boba tunnel -->
+                        </div>
+                        <div class="songbtn">
+                            <img id="previous" src="img/previous.svg" alt="">
+                            <img id="play" src="img/play.svg" alt="">
+                            <img id="next" src="img/next.svg" alt="">
+                        </div>
+                        <div class="songtime">
+                            <!-- 00:00 / 00:00 -->
+                        </div>
+                        <div class="volume">
+                            <img src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" class="progress">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
